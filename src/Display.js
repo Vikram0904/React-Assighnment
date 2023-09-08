@@ -9,8 +9,7 @@ export default function Display() {
   } else if (date.getHours() >= 12 && date.getHours() <= 15) {
     display = 'Good Afternoon';
   } else if (
-    date.getHours() >= 15 &&
-    date.getMinutes() <= 1 &&
+    (date.getHours() >= 15 && date.getMinutes() <= 1) ||
     date.getHours() <= 19
   ) {
     display = 'Good Evening';
